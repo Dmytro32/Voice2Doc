@@ -1,0 +1,18 @@
+{
+    "audio":{
+       "CHANNELS":1,
+       "SAMPLE_RATE":16000,
+       "DURATION":3600,
+       "WAVE_OUTPUT_FILENAME":"speech",
+       "WAVE_OUTPUT_FOLDER":"./waves/"
+    },
+    "model":{
+       "device":"cpu",
+       "model_id":"openai/whisper-large-v3-turbo",
+       "language":"ukrainian"
+    },
+    "doc":{
+       "name":"demo.docx",
+       "folder":"./"
+    }
+ }
