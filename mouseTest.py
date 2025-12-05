@@ -19,8 +19,6 @@ def openWhisper():
     torch_dtype = torch.float16 if torch.cuda.is_available() else torch.float32
 
     model_id = set["model"]["model_id"]
-    folder=set["audio"]["WAVE_OUTPUT_FOLDER"] 
-    file=set["audio"]["WAVE_OUTPUT_FILENAME"]+".wav"    
     model = AutoModelForSpeechSeq2Seq.from_pretrained(
         model_id, torch_dtype=torch_dtype, low_cpu_mem_usage=True, use_safetensors=True
     )
